@@ -8,7 +8,10 @@ import {
   Image,
   TouchableOpacity,
 } from "react-native";
-import { ViewPropTypes } from "deprecated-react-native-prop-types";
+import {
+  ViewPropTypes,
+  TextPropTypes,
+} from "deprecated-react-native-prop-types";
 class Tags extends React.Component {
   focus() {
     this.input.focus();
@@ -264,7 +267,7 @@ Tags.propTypes = {
   disabledInputStyle: ViewPropTypes.style,
   leftElementContainerStyle: ViewPropTypes.style,
   rightElementContainerStyle: ViewPropTypes.style,
-  labelStyle: Text.propTypes.style,
+  labelStyle: TextPropTypes.style,
   deleteIconStyles: ViewPropTypes.style,
 };
 
